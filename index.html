@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Escrituras verdaderas</title>
+</head>
+<body>
+
+    <div id="contenedor">
+        <div >
+            <h1 id="entrada">Mensaje</h1>
+        </div>
+        <div>
+            <input placeholder="Ingresa tu mensaje" type="text" id="mensajeEntrada">
+        </div>
+        <div>
+            <br><br><button onclick="cifrar()">cifrar</button>
+            <br><br><input placeholder="clave" class="clave" id="clave" type="number">
+            <br><br><button onclick="descifrar()">descifrar</button>
+        </div>
+        <div>
+            <div>
+                <h1 id="salida">Mensaje </h1>
+            </div>
+            
+        </div>
+        
+        <input placeholder="mensaje secreto"id="mensajeSalida" type="text" disabled>
+    </div>
+    <script src="accion.js"></script>
+
+</body>
+</html>
