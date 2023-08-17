@@ -14,7 +14,7 @@ function cifrar() {
         let mensajeCifrado = "";
 
         for (let i = 0; i < mensaje.length; i++) {
-            let caracter = mensaje[i];
+            let caracter = mensaje[i].toLowerCase();
             
             if (abecedario.includes(caracter)) {
                 let indiceOriginal = abecedario.indexOf(caracter);
@@ -42,7 +42,7 @@ function descifrar() {
         let mensajeDescifrado = "";
 
         for (let i = 0; i < mensaje.length; i++) {
-            let caracter = mensaje[i];
+            let caracter = mensaje[i].toLowerCase();
             
             if (abecedario.includes(caracter)) {
                 let indiceOriginal = abecedario.indexOf(caracter);
